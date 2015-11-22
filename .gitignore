@@ -1,5 +1,5 @@
 # Custom
-.ipynb_checkpoints/*.ipynb
+.ipynb_checkpoints/
 results/
 
 # Byte-compiled / optimized / DLL files
