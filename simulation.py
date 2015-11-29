@@ -13,7 +13,7 @@ def bernoulli(p):
 start = time()
 
 hosts = []
-n_hosts = 1000
+n_hosts = 400
 for i in range(n_hosts):
     if i < n_hosts / 2:
         hosts.append(Host(color='blue'))
@@ -167,7 +167,7 @@ for t in range(n_timesteps):
 
 end = time()
 
-print(end - start)
-    
+print('n_hosts: {0}, time:{1}'.format(n_hosts, end - start))
+
 with open('results/simulation.pkl', 'wb') as f:
     pkl.dump(data, f)
